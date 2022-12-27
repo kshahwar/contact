@@ -1,6 +1,4 @@
-import React, { useState, useEffect } from 'react';
-import db from '../../firebase';
-import firebase from 'firebase/compat/app';
+import React, { useState} from 'react';
 import { getStorage, ref, uploadBytesResumable, getDownloadURL } from "firebase/storage";
 import { v4 } from "uuid";
 

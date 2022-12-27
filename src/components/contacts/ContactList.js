@@ -45,7 +45,7 @@ const ContactList = () => {
                 className="ui segment"
               >
                 <div style={{width:"200px", height:"20px", marginBottom:"20px"}}>
-                <img style={{width:"40px", height:"40px" ,borderRadius:"60%"}} src={val.Url}/></div>
+                <img style={{width:"40px", height:"40px" ,borderRadius:"60%"}} src={val.Url} alt={"logo"}/></div>
                 <div style={{width:"300px", height:"20px"}}>Name : {val.name}</div>
                 <div  style={{width:"300px", height:"20px"}}>Phone : {val.phone}</div> 
                 <div  style={{width:"300px", height:"20px"}}> type : {val.type}</div>

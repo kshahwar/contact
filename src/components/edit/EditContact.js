@@ -60,7 +60,7 @@ const EditContacts = () => {
     else{
       navigatetoHome('/')
     }
-  }, [ navgate]);
+  }, [navigatetoHome, navgate]);
   return (
 
     <div className="container">
