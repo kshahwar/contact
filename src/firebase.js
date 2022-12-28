@@ -1,6 +1,9 @@
-
+import { initializeApp } from "firebase/app";
+import { getStorage } from "firebase/storage";
 import firebase from 'firebase/compat/app';
 import 'firebase/compat/firestore';
+
+
 const firebaseApp = firebase.initializeApp({
   apiKey: "AIzaSyAKStFm5xGExO_sxSgutsZNdor7gUInejU",
  authDomain: "contactavatar-683f0.firebaseapp.com",

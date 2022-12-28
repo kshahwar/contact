@@ -35,7 +35,7 @@ const AddContacts = () => {
       setSaved(false);
     }, 1000);
 
-    
+   
   }
   useEffect(()=>{
     setProfilepic(imageUrls)
@@ -43,13 +43,13 @@ const AddContacts = () => {
   },[imageUrls])
   ;
   return (
-    <div className="container">
+    <div className="container-main">
       <form onSubmit={handleClick}>
     <div className="wrapper">
       <div style={{display:"flex" , flexDirection: "row" }}><h1 style={{ textAlign: "left" }} >
         Add Contact
       </h1>
-      <div style={{marginLeft:'90px' , marginTop:'10px'}} onClick={()=>{NavigateTohome('/')}}> ↩Back</div>
+      <div style={{marginLeft:'90px' , marginTop:'10px', cursor:'pointer'}} onClick={()=>{NavigateTohome('/')}}> ↩Back</div>
       </div>
       <img height="40px" width="40px" src={profilePic} alt="user" ></img>
       <div className="segment" >

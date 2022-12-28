@@ -19,7 +19,7 @@ const EditContacts = () => {
     setImageUrls(url)
     console.log(url)
   }
-
+  const NavigateTohome= useNavigate()
   const id =name+phone+v4()
   const handleClick = () => {
     const data = {
@@ -62,13 +62,16 @@ const EditContacts = () => {
     }
   }, [navigatetoHome, navgate]);
   return (
-
-    <div className="container">
+<>     <div className="backdrop"></div>
+    <div className="container-main">
+ 
     <form onSubmit={handleClick}>
     <div className="wrapper">
-    <h1 style={{ textAlign: "left" }} >
+    <div style={{display:"flex" , flexDirection: "row" }}><h1 style={{ textAlign: "left" }} >
         Edit Contact
       </h1>
+      <div style={{marginLeft:'90px' , marginTop:'10px', cursor:'pointer'}} onClick={()=>{NavigateTohome('/')}}> ↩Back</div>
+      </div>
       <img height="40px" width="40px" src={profilePic} alt="user" ></img>
       <div className="segment" >
       <div style={{display:"flex", flexDirection:"column"}}>
@@ -165,6 +168,7 @@ const EditContacts = () => {
     </div>
     </form>
     </div>
+    </>
   );
 };
 
